@@ -1,0 +1,47 @@
+.DS_Store
+node_modules
+.vscode
+
+**/dist
+!dist/index.html
+
+src/shared/*
+!src/shared/.gitkeep
+
+HELP.md
+.gradle
+build
+out
+!gradle/wrapper/gradle-wrapper.jar
+
+### Project ###
+
+**/generated/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+.idea/**
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+influxdb/
+chronograf/
+/js-client/node_modules/
