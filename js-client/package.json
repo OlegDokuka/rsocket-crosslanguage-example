@@ -1,0 +1,35 @@
+{
+  "name": "game-client",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "webpack",
+    "start:dev": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/rsocket-flowable": "^0.0.5",
+    "@types/rsocket-types": "^0.0.2",
+    "@types/rsocket-websocket-client": "^0.0.3",
+    "reactor-core-js": "^0.5.0",
+    "rsocket-flowable": "^0.0.14",
+    "rsocket-types": "^0.0.16",
+    "rsocket-websocket-client": "0.0.19"
+  },
+  "devDependencies": {
+    "async": "^3.2.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "compression-webpack-plugin": "^4.0.0",
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "livereload": "^0.9.1",
+    "ts-loader": "^7.0.4",
+    "typescript": "^3.9.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
