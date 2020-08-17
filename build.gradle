@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.4.0-M2' apply false
+	id 'org.springframework.boot' version '2.4.0' apply false
 }
 
 subprojects {
@@ -15,18 +15,12 @@ subprojects {
 	repositories {
 		jcenter()
 		mavenCentral()
-		maven { url 'https://jitpack.io' }
-		maven { url 'https://repo.spring.io/snapshot' }
-		maven { url 'https://repo.spring.io/milestone' }
-		maven { url 'https://oss.jfrog.org/oss-snapshot-local' }
-		maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
-		mavenLocal()
 	}
 
 	dependencyManagement {
 		imports {
-			mavenBom 'org.springframework.boot:spring-boot-dependencies:2.4.0-M2'
-			mavenBom 'io.rsocket:rsocket-bom:1.1.0-M1'
+			mavenBom 'org.springframework.boot:spring-boot-dependencies:2.4.0'
+			mavenBom 'io.rsocket:rsocket-bom:1.1.0'
 		}
 	}
 }

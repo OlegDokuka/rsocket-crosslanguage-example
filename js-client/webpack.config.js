@@ -19,9 +19,11 @@ module.exports = {
             title: 'RSocket JS Example',
             template: path.join(__dirname, 'src/main/resources/public/index.html')
         }),
-        new CopyPlugin([
-            { from: 'src/main/resources/public', to: './' },
-        ]),
+        new CopyPlugin({
+            patterns: [
+                { from: 'src/main/resources/public', to: './' },
+            ],
+        }),
         new CompressionPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ],
@@ -32,11 +34,11 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: [
                     /node_modules/,
-
                 ]
             }
         ]
     },
+    node: false,
     resolve: {
         extensions: ['.tsx', '.ts', '.js']
     },
