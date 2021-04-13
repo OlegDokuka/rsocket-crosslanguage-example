@@ -38,7 +38,6 @@ module.exports = {
             }
         ]
     },
-    node: false,
     resolve: {
         extensions: ['.tsx', '.ts', '.js']
     },
