@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.4.0' apply false
+	id 'org.springframework.boot' version '2.6.1' apply false
 }
 
 subprojects {
@@ -19,8 +19,8 @@ subprojects {
 
 	dependencyManagement {
 		imports {
-			mavenBom 'org.springframework.boot:spring-boot-dependencies:2.4.0'
-			mavenBom 'io.rsocket:rsocket-bom:1.1.0'
+			mavenBom 'org.springframework.boot:spring-boot-dependencies:2.6.1'
+			mavenBom 'io.rsocket:rsocket-bom:1.1.1'
 		}
 	}
 }
